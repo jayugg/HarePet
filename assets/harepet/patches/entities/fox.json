@@ -1,0 +1,8 @@
+[
+  {
+    "op": "addeach",
+    "path": "/server/behaviors/12/aitasks/4/entityCodes/-",
+    "value": [ "harepet:hare-*" ],
+    "file": "game:entities/land/fox.json"
+  }
+]

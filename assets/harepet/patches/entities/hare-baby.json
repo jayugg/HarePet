@@ -1,0 +1,145 @@
+[
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/-",
+    "file": "game:entities/land/hare-baby.json",
+    "value": {
+      "code": "tameable",
+      "size": "small",
+      "disobediencePerDay": 0,
+      "treat": [
+        { "code": "drygrass", "progress": 0.05, "cooldown": 0.2 },
+        { "code": "grain-spelt", "progress": 0.1, "cooldown": 0.5 },
+        { "code": "grain-rye", "progress": 0.1, "cooldown": 0.5 },
+        { "code": "grain-flax", "progress": 0.1, "cooldown": 0.5 },
+        { "code": "grain-rice", "progress": 0.1, "cooldown": 0.5 },
+        { "code": "grain-amaranth", "progress": 0.1, "cooldown": 0.5 },
+        { "code": "grain-sunflower", "progress": 0.1, "cooldown": 0.5 },
+        { "code": "vegetable-carrot", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-turnip", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-parnsip", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-pumpkin", "progress": 0.2, "cooldown": 1 },
+        {
+          "code": "petcookie-veggie-perfect",
+          "domain": "petai",
+          "progress": 0.8,
+          "cooldown": 3
+        }
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "file": "game:entities/land/hare-baby.json",
+    "value": {
+      "code": "mouthinventory",
+      "acceptStacks": [
+        { "type": "item", "code": "grain-spelt" },
+        { "type": "item", "code": "grain-rye" },
+        { "type": "item", "code": "grain-flax" },
+        { "type": "item", "code": "grain-rice" },
+        { "type": "item", "code": "grain-amaranth" },
+        { "type": "item", "code": "grain-sunflower" },
+        { "type": "item", "code": "vegetable-carrot" },
+        { "type": "item", "code": "vegetable-turnip" },
+        { "type": "item", "code": "vegetable-parsnip" },
+        { "type": "item", "code": "vegetable-pumpkin" }
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "file": "game:entities/land/hare-baby.json",
+    "value": {
+      "code": "tameable",
+      "size": "small",
+      "disobediencePerDay": 0,
+      "treat": [
+        { "code": "drygrass", "progress": 0.05, "cooldown": 0.2 },
+        { "code": "grain-spelt", "progress": 0.1, "cooldown": 0.5 },
+        { "code": "grain-rye", "progress": 0.1, "cooldown": 0.5 },
+        { "code": "grain-flax", "progress": 0.1, "cooldown": 0.5 },
+        { "code": "grain-rice", "progress": 0.1, "cooldown": 0.5 },
+        { "code": "grain-amaranth", "progress": 0.1, "cooldown": 0.5 },
+        { "code": "grain-sunflower", "progress": 0.1, "cooldown": 0.5 },
+        { "code": "vegetable-carrot", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-turnip", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-parnsip", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-pumpkin", "progress": 0.2, "cooldown": 1 },
+        {
+          "code": "petcookie-veggie-perfect",
+          "domain": "petai",
+          "progress": 0.8,
+          "cooldown": 3
+        }
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "file": "game:entities/land/hare-baby.json",
+    "value": {
+      "code": "mouthinventory",
+      "acceptStacks": [
+        { "type": "item", "code": "drygrass" },
+        { "type": "item", "code": "grain-spelt" },
+        { "type": "item", "code": "grain-rye" },
+        { "type": "item", "code": "grain-flax" },
+        { "type": "item", "code": "grain-rice" },
+        { "type": "item", "code": "grain-amaranth" },
+        { "type": "item", "code": "grain-sunflower" },
+        { "type": "item", "code": "vegetable-carrot" },
+        { "type": "item", "code": "vegetable-turnip" },
+        { "type": "item", "code": "vegetable-parsnip" },
+        { "type": "item", "code": "vegetable-pumpkin" }
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/land/hare-baby.json",
+    "value": {
+      "code": "useinventory",
+      "animation": "eat",
+      "animationSpeed": 0.75,
+      "priority": 1.6,
+      "priorityForCancel": 1.7,
+      "eatItemCategories": [ "Vegetable", "Fruit" ],
+      "eatItemCodes": [
+        "drygrass",
+        "grain-spelt",
+        "grain-rye",
+        "grain-flax",
+        "grain-rice",
+        "grain-amaranth",
+        "grain-sunflower",
+        "vegetable-carrot",
+        "vegetable-turnip",
+        "vegetable-parnsip",
+        "vegetable-pumpkin"
+      ],
+      "useTime": 1.5,
+      "mincooldownHours": 1,
+      "maxcooldownHours": 1.5
+    }
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/9/aitasks/-",
+    "file": "game:entities/land/hare-baby.json",
+    "value": {
+      "code": "stayclosetoentity",
+      "priority": 1.4,
+      "entityCode": "harepet:tamehare-female",
+      "movespeed": 0.02,
+      "animationSpeed": 3,
+      "maxDistance": 5,
+      "searchRange": 25,
+      "animation": "Run"
+    }
+  }
+]

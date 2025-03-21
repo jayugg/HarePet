@@ -1,0 +1,20 @@
+[
+  {
+    "op": "addmerge",
+    "path": "/server/behaviors/-",
+    "file": "game:entities/land/hare-female.json",
+    "value": {
+      "code": "multiply",
+      "spawnEntityCode": "game:hare-baby",
+      "requiresNearbyEntityCode": "harepet:tamehare-male-*",
+      "requiresNearbyEntityRange": 10,
+      "spawnQuantityMin": 1,
+      "spawnQuantityMax": 4,
+      "eatAnyway": true,
+      "pregnancyDays": 5,
+      "multiplyCooldownDaysMin": 2,
+      "multiplyCooldownDaysMax": 5,
+      "portionsEatenForMultiply": 2
+    }
+  }
+]
