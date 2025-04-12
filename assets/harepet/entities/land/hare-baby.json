@@ -49,9 +49,24 @@
           { "code": "grain-amaranth", "progress": 0.1, "cooldown": 0.5 },
           { "code": "grain-sunflower", "progress": 0.1, "cooldown": 0.5 },
           { "code": "vegetable-carrot", "progress": 0.2, "cooldown": 1 },
+          { "code": "vegetable-cabbage", "progress": 0.2, "cooldown": 1 },
+          { "code": "vegetable-onion", "progress": 0.2, "cooldown": 1 },
           { "code": "vegetable-turnip", "progress": 0.2, "cooldown": 1 },
-          { "code": "vegetable-parnsip", "progress": 0.2, "cooldown": 1 },
+          { "code": "vegetable-parsnip", "progress": 0.2, "cooldown": 1 },
+          {
+            "code": "vegetable-cookedcattailroot",
+            "progress": 0.2,
+            "cooldown": 1
+          },
           { "code": "vegetable-pumpkin", "progress": 0.2, "cooldown": 1 },
+          { "code": "vegetable-cassava", "progress": 0.2, "cooldown": 1 },
+          {
+            "code": "vegetable-cookedpapyrusroot",
+            "progress": 0.2,
+            "cooldown": 1
+          },
+          { "code": "vegetable-bellpepper", "progress": 0.2, "cooldown": 1 },
+          { "code": "vegetable-olive", "progress": 0.2, "cooldown": 1 },
           {
             "code": "petcookie-veggie-perfect",
             "domain": "petai",
@@ -71,9 +86,16 @@
           { "type": "item", "code": "grain-amaranth" },
           { "type": "item", "code": "grain-sunflower" },
           { "type": "item", "code": "vegetable-carrot" },
+          { "type": "item", "code": "vegetable-cabbage" },
+          { "type": "item", "code": "vegetable-onion" },
           { "type": "item", "code": "vegetable-turnip" },
           { "type": "item", "code": "vegetable-parsnip" },
+          { "type": "item", "code": "vegetable-cookedcattailroot" },
           { "type": "item", "code": "vegetable-pumpkin" },
+          { "type": "item", "code": "vegetable-cassava" },
+          { "type": "item", "code": "vegetable-cookedpapyrusroot" },
+          { "type": "item", "code": "vegetable-bellpepper" },
+          { "type": "item", "code": "vegetable-olive" },
           { "type": "item", "code": "petai:petcookie-veggie-perfect" }
         ]
       },
@@ -155,9 +177,24 @@
           { "code": "grain-amaranth", "progress": 0.1, "cooldown": 0.5 },
           { "code": "grain-sunflower", "progress": 0.1, "cooldown": 0.5 },
           { "code": "vegetable-carrot", "progress": 0.2, "cooldown": 1 },
+          { "code": "vegetable-cabbage", "progress": 0.2, "cooldown": 1 },
+          { "code": "vegetable-onion", "progress": 0.2, "cooldown": 1 },
           { "code": "vegetable-turnip", "progress": 0.2, "cooldown": 1 },
-          { "code": "vegetable-parnsip", "progress": 0.2, "cooldown": 1 },
+          { "code": "vegetable-parsnip", "progress": 0.2, "cooldown": 1 },
+          {
+            "code": "vegetable-cookedcattailroot",
+            "progress": 0.2,
+            "cooldown": 1
+          },
           { "code": "vegetable-pumpkin", "progress": 0.2, "cooldown": 1 },
+          { "code": "vegetable-cassava", "progress": 0.2, "cooldown": 1 },
+          {
+            "code": "vegetable-cookedpapyrusroot",
+            "progress": 0.2,
+            "cooldown": 1
+          },
+          { "code": "vegetable-bellpepper", "progress": 0.2, "cooldown": 1 },
+          { "code": "vegetable-olive", "progress": 0.2, "cooldown": 1 },
           {
             "code": "petcookie-veggie-perfect",
             "domain": "petai",
@@ -177,9 +214,16 @@
           { "type": "item", "code": "grain-amaranth" },
           { "type": "item", "code": "grain-sunflower" },
           { "type": "item", "code": "vegetable-carrot" },
+          { "type": "item", "code": "vegetable-cabbage" },
+          { "type": "item", "code": "vegetable-onion" },
           { "type": "item", "code": "vegetable-turnip" },
           { "type": "item", "code": "vegetable-parsnip" },
+          { "type": "item", "code": "vegetable-cookedcattailroot" },
           { "type": "item", "code": "vegetable-pumpkin" },
+          { "type": "item", "code": "vegetable-cassava" },
+          { "type": "item", "code": "vegetable-cookedpapyrusroot" },
+          { "type": "item", "code": "vegetable-bellpepper" },
+          { "type": "item", "code": "vegetable-olive" },
           { "type": "item", "code": "petai:petcookie-veggie-perfect" }
         ]
       },
@@ -353,9 +397,16 @@
               "grain-amaranth",
               "grain-sunflower",
               "vegetable-carrot",
+              "vegetable-cabbage",
+              "vegetable-onion",
               "vegetable-turnip",
               "vegetable-parsnip",
+              "vegetable-cookedcattailroot",
               "vegetable-pumpkin",
+              "vegetable-cassava",
+              "vegetable-cookedpapyrusroot",
+              "vegetable-bellpepper",
+              "vegetable-olive",
               "petai:petcookie-veggie-perfect"
             ],
             "useTime": 1.5,

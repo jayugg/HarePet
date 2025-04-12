@@ -6,7 +6,7 @@
     "value": {
       "code": "tameable",
       "size": "small",
-      "disobediencePerDay": 0,
+      "tameEntityCode": "harepet:tamehare-baby",
       "treat": [
         { "code": "drygrass", "progress": 0.05, "cooldown": 0.2 },
         { "code": "grain-spelt", "progress": 0.1, "cooldown": 0.5 },
@@ -16,15 +16,16 @@
         { "code": "grain-amaranth", "progress": 0.1, "cooldown": 0.5 },
         { "code": "grain-sunflower", "progress": 0.1, "cooldown": 0.5 },
         { "code": "vegetable-carrot", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-cabbage", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-onion", "progress": 0.2, "cooldown": 1 },
         { "code": "vegetable-turnip", "progress": 0.2, "cooldown": 1 },
-        { "code": "vegetable-parnsip", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-parsnip", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-cookedcattailroot", "progress": 0.2, "cooldown": 1 },
         { "code": "vegetable-pumpkin", "progress": 0.2, "cooldown": 1 },
-        {
-          "code": "petcookie-veggie-perfect",
-          "domain": "petai",
-          "progress": 0.8,
-          "cooldown": 3
-        }
+        { "code": "vegetable-cassava", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-cookedpapyrusroot", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-bellpepper", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-olive", "progress": 0.2, "cooldown": 1 }
       ]
     }
   },
@@ -35,6 +36,7 @@
     "value": {
       "code": "mouthinventory",
       "acceptStacks": [
+        { "type": "item", "code": "drygrass" },
         { "type": "item", "code": "grain-spelt" },
         { "type": "item", "code": "grain-rye" },
         { "type": "item", "code": "grain-flax" },
@@ -42,9 +44,16 @@
         { "type": "item", "code": "grain-amaranth" },
         { "type": "item", "code": "grain-sunflower" },
         { "type": "item", "code": "vegetable-carrot" },
+        { "type": "item", "code": "vegetable-cabbage" },
+        { "type": "item", "code": "vegetable-onion" },
         { "type": "item", "code": "vegetable-turnip" },
         { "type": "item", "code": "vegetable-parsnip" },
-        { "type": "item", "code": "vegetable-pumpkin" }
+        { "type": "item", "code": "vegetable-cookedcattailroot" },
+        { "type": "item", "code": "vegetable-pumpkin" },
+        { "type": "item", "code": "vegetable-cassava" },
+        { "type": "item", "code": "vegetable-cookedpapyrusroot" },
+        { "type": "item", "code": "vegetable-bellpepper" },
+        { "type": "item", "code": "vegetable-olive" }
       ]
     }
   },
@@ -55,7 +64,6 @@
     "value": {
       "code": "tameable",
       "size": "small",
-      "disobediencePerDay": 0,
       "treat": [
         { "code": "drygrass", "progress": 0.05, "cooldown": 0.2 },
         { "code": "grain-spelt", "progress": 0.1, "cooldown": 0.5 },
@@ -65,15 +73,16 @@
         { "code": "grain-amaranth", "progress": 0.1, "cooldown": 0.5 },
         { "code": "grain-sunflower", "progress": 0.1, "cooldown": 0.5 },
         { "code": "vegetable-carrot", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-cabbage", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-onion", "progress": 0.2, "cooldown": 1 },
         { "code": "vegetable-turnip", "progress": 0.2, "cooldown": 1 },
-        { "code": "vegetable-parnsip", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-parsnip", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-cookedcattailroot", "progress": 0.2, "cooldown": 1 },
         { "code": "vegetable-pumpkin", "progress": 0.2, "cooldown": 1 },
-        {
-          "code": "petcookie-veggie-perfect",
-          "domain": "petai",
-          "progress": 0.8,
-          "cooldown": 3
-        }
+        { "code": "vegetable-cassava", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-cookedpapyrusroot", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-bellpepper", "progress": 0.2, "cooldown": 1 },
+        { "code": "vegetable-olive", "progress": 0.2, "cooldown": 1 }
       ]
     }
   },
@@ -92,9 +101,16 @@
         { "type": "item", "code": "grain-amaranth" },
         { "type": "item", "code": "grain-sunflower" },
         { "type": "item", "code": "vegetable-carrot" },
+        { "type": "item", "code": "vegetable-cabbage" },
+        { "type": "item", "code": "vegetable-onion" },
         { "type": "item", "code": "vegetable-turnip" },
         { "type": "item", "code": "vegetable-parsnip" },
-        { "type": "item", "code": "vegetable-pumpkin" }
+        { "type": "item", "code": "vegetable-cookedcattailroot" },
+        { "type": "item", "code": "vegetable-pumpkin" },
+        { "type": "item", "code": "vegetable-cassava" },
+        { "type": "item", "code": "vegetable-cookedpapyrusroot" },
+        { "type": "item", "code": "vegetable-bellpepper" },
+        { "type": "item", "code": "vegetable-olive" }
       ]
     }
   },
@@ -118,9 +134,16 @@
         "grain-amaranth",
         "grain-sunflower",
         "vegetable-carrot",
+        "vegetable-cabbage",
+        "vegetable-onion",
         "vegetable-turnip",
-        "vegetable-parnsip",
-        "vegetable-pumpkin"
+        "vegetable-parsnip",
+        "vegetable-cookedcattailroot",
+        "vegetable-pumpkin",
+        "vegetable-cassava",
+        "vegetable-cookedpapyrusroot",
+        "vegetable-bellpepper",
+        "vegetable-olive"
       ],
       "useTime": 1.5,
       "mincooldownHours": 1,

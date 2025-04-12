@@ -1,0 +1,7 @@
+/.idea/**/*
+/Releases/**/*
+/_ReSharper.Caches/
+
+*.DS_Store
+*.sln.DotSettings.user
+riderModule.iml

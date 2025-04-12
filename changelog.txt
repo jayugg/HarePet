@@ -1,2 +1,2 @@
-- 1.20.5 release (DO NOT USE THIS ON 1.20.4)
-- Now tame hares can breed with normal hares and interact with them
+- [Tweak] Increased variety of vegetables hares can eat and be tamed with
+- [Fix] Fix hare taming
