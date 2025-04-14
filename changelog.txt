@@ -1,2 +1,1 @@
-- [Tweak] Increased variety of vegetables hares can eat and be tamed with
-- [Fix] Fix hare taming
+- [Localisation] French translation by Wailwolf
