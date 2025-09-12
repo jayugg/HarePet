@@ -1,0 +1,92 @@
+{
+  "code": "creature",
+  "class": "ItemCreature",
+  "maxstacksize": 64,
+  "variantgroups": [
+    {
+      "code": "type",
+      "states": [
+        "hare-arctic-adult-male",
+        "hare-arctic-adult-female",
+        "hare-arctic-baby-male",
+        "hare-arctic-baby-female",
+        "hare-cape-adult-male",
+        "hare-cape-adult-female",
+        "hare-cape-baby-male",
+        "hare-cape-baby-female",
+        "hare-european-adult-male",
+        "hare-european-adult-female",
+        "hare-european-baby-male",
+        "hare-european-baby-female",
+        "hare-indian-adult-male",
+        "hare-indian-adult-female",
+        "hare-indian-baby-male",
+        "hare-indian-baby-female",
+        "hare-jackblack-adult-male",
+        "hare-jackblack-adult-female",
+        "hare-jackblack-baby-male",
+        "hare-jackblack-baby-female",
+        "hare-scrub-adult-male",
+        "hare-scrub-adult-female",
+        "hare-scrub-baby-male",
+        "hare-scrub-baby-female"
+      ]
+    }
+  ],
+  "shapeByType": {
+    "creature-hare-*-baby-male": { "base": "game:entity/animal/mammal/hare/baby" },
+    "creature-hare-*-baby-female": { "base": "game:entity/animal/mammal/hare/baby" },
+    "creature-hare-*-adult-male": { "base": "game:entity/animal/mammal/hare/european-male" },
+    "creature-hare-*-adult-female": { "base": "game:entity/animal/mammal/hare/european-male" },
+    "*": { "base": "game:entity/land/{type}" }
+  },
+  "texturesByType": {
+    "creature-hare-*-baby-male": { "skin": { "base": "game:entity/animal/mammal/hare/european-baby" } },
+    "creature-hare-*-baby-female": { "skin": { "base": "game:entity/animal/mammal/hare/european-baby" } },
+    "*-hare-arctic-adult-male": { "skin": { "base": "game:entity/animal/mammal/hare/arctic-male1" } },
+    "*-hare-arctic-adult-female": { "skin": { "base": "game:entity/animal/mammal/hare/arctic-female1" } },
+    "*-hare-cape-adult-male": { "skin": { "base": "game:entity/animal/mammal/hare/cape-male1" } },
+    "*-hare-cape-adult-female": { "skin": { "base": "game:entity/animal/mammal/hare/cape-female1" } },
+    "*-hare-european-adult-male": { "skin": { "base": "game:entity/animal/mammal/hare/european-male1" } },
+    "*-hare-european-adult-female": { "skin": { "base": "game:entity/animal/mammal/hare/european-female1" } },
+    "*-hare-indian-adult-male": { "skin": { "base": "game:entity/animal/mammal/hare/indian-male1" } },
+    "*-hare-indian-adult-female": { "skin": { "base": "game:entity/animal/mammal/hare/indian-female1" } },
+    "*-hare-jackblack-adult-male": { "skin": { "base": "game:entity/animal/mammal/hare/jackblack-male1" } },
+    "*-hare-jackblack-adult-female": { "skin": { "base": "game:entity/animal/mammal/hare/jackblack-female1" } },
+    "*-hare-scrub-adult-male": { "skin": { "base": "game:entity/animal/mammal/hare/scrub-male1" } },
+    "*-hare-scrub-adult-female": { "skin": { "base": "game:entity/animal/mammal/hare/scrub-female1" } }
+  },
+  "creativeinventory": { "general": [ "*" ], "items": [ "*" ], "creatures": [ "*" ] },
+  "materialDensity": 600,
+  "guiTransformByType": {
+    "creature-hare-*": {
+      "rotate": true,
+      "translation": { "x": 2, "y": 0, "z": 0 },
+      "rotation": { "x": 4, "y": -59, "z": -180 },
+      "origin": { "x": 0.54, "y": 0.28, "z": 0.5 },
+      "scale": 2.6
+    }
+  },
+  "tpHandTransformByType": {
+    "creature-hare-*-adult-male": {
+      "translation": { "x": -0.8, "y": -0.4, "z": -0.5 },
+      "rotation": { "x": -180, "y": 0, "z": -156 },
+      "scale": 0.7
+    },
+    "creature-hare-*-adult-female": {
+      "translation": { "x": -0.8, "y": -0.4, "z": -0.5 },
+      "rotation": { "x": -180, "y": 0, "z": -156 },
+      "scale": 0.7
+    },
+    "creature-hare-*-baby-male": {
+      "translation": { "x": -0.6, "y": -0.1, "z": -0.3 },
+      "rotation": { "x": -180, "y": 0, "z": -156 },
+      "scale": 1
+    },
+    "creature-hare-*-baby-female": {
+      "translation": { "x": -0.6, "y": -0.1, "z": -0.3 },
+      "rotation": { "x": -180, "y": 0, "z": -156 },
+      "scale": 1
+    }
+  }
+}

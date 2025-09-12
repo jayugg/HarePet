@@ -1,1 +1,5 @@
-- [Localisation] Russian translation by Redison
+v1.3.0 – 1.21 Update
+- [Update] Hares follow new vanilla conventions. Updating from the 1.20 version will remove your old pets.
+- [Fix] Fixed interaction between tamed hares and foxes
+- [Tweak] Mating tamed hares will give birth to normal hares unless parents are both tamed. (Tame hares can mate with normal hares).
+- [Localisation] Updated to use new game localisations (other languages missing the "tame" descriptor)

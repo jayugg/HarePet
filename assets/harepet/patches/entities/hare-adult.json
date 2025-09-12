@@ -1,0 +1,34 @@
+[
+  {
+    "op": "addEach",
+    "path": "/client/behaviors/-",
+    "file": "game:entities/animal/mammal/hare-adult.json",
+    "value": [
+      { "code": "multiply", "enabledByType": { "*-female": true, "*": false } }
+    ]
+  },
+  {
+    "op": "addEach",
+    "path": "/server/behaviors/-",
+    "file": "game:entities/animal/mammal/hare-adult.json",
+    "value": [
+      {
+        "code": "multiply",
+        "enabledByType": { "*-female": true, "*": false },
+        "spawnEntityCodes": [
+          { "code": "hare-{type}-baby-male" },
+          { "code": "hare-{type}-baby-female" }
+        ],
+        "requiresNearbyEntityCode": "harepet:hare-*-adult-male",
+        "requiresNearbyEntityRange": 10,
+        "spawnQuantityMin": 1,
+        "spawnQuantityMax": 4,
+        "eatAnyway": true,
+        "pregnancyDays": 5,
+        "multiplyCooldownDaysMin": 2,
+        "multiplyCooldownDaysMax": 5,
+        "portionsEatenForMultiply": 2
+      }
+    ]
+  }
+]

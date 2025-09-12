@@ -1,36 +1,22 @@
 {
-  "code": "tamehare-male",
+  "code": "tamehare-baby",
   "class": "EntityAgent",
-  "variantgroups": [
-    {
-      "code": "type",
-      "states": [
-        "arctic",
-        "ashgrey",
-        "darkbrown",
-        "desert",
-        "gold",
-        "lightbrown",
-        "lightgrey",
-        "silver",
-        "smokegrey"
-      ]
-    }
-  ],
-  "hitboxSize": { "x": 0.75, "y": 0.5 },
+  "enabled": false,
+  "hitboxSize": { "x": 0.4, "y": 0.3 },
+  "eyeHeight": 0.4,
   "attributes": {
     "creatureDiet": { "foodCategories": [ "Vegetable" ], "foodTags": [ "nibbleCrop" ] },
     "basketCatchable": true,
-    "trapChance": 0.5,
+    "trapChance": 0.8,
     "trapDestroyChance": 0,
     "handbook": { "groupcode": "creaturegroup-tamehare" }
   },
-  "eyeHeight": 0.6,
   "drops": [],
   "client": {
     "renderer": "Shape",
-    "shape": { "base": "game:entity/land/hare-male" },
-    "textures": { "skin": { "base": "game:entity/hare/male-{type}" } },
+    "shape": { "base": "game:entity/land/hare-baby" },
+    "texture": { "base": "game:entity/hare/baby-brown" },
+    "sizeGrowthFactor": 0.2,
     "behaviors": [
       { "code": "nametag" },
       {
@@ -127,8 +113,6 @@
         "weight": 10,
         "blendMode": "AddAverage"
       },
-      { "code": "dig", "animation": "dig", "animationSpeed": 1 },
-      { "code": "longdig", "animation": "longdig", "animationSpeed": 1 },
       {
         "code": "die",
         "animation": "death",
@@ -245,48 +229,33 @@
       },
       { "code": "repulseagents" },
       { "code": "controlledphysics", "stepHeight": 1.1251 },
-      { "code": "health", "currenthealth": 5, "maxhealth": 5 },
+      { "code": "health", "currenthealth": 3, "maxhealth": 3 },
       {
         "code": "deaddecay",
         "hoursToDecay": 96,
         "decayedBlock": "carcass-tiny"
       },
       { "code": "floatupwhenstuck", "onlyWhenDead": true },
-      {
-        "code": "harvestable",
-        "drops": [
-          {
-            "type": "item",
-            "code": "redmeat-raw",
-            "quantity": { "avg": 2, "var": 0 }
-          },
-          {
-            "type": "item",
-            "code": "hide-raw-small",
-            "quantity": { "avg": 0.5, "var": 0 }
-          }
-        ]
-      },
+      { "code": "harvestable", "drops": [] },
       { "code": "breathe" },
       {
-        "code": "emotionstates",
-        "states": [
-          {
-            "code": "fleeondamage",
-            "duration": 10,
-            "chance": 1,
-            "slot": 0,
-            "priority": 1,
-            "accumType": "max"
-          },
-          {
-            "code": "saturated",
-            "duration": 1200,
-            "chance": 1,
-            "slot": 0,
-            "priority": 1,
-            "accumType": "sum"
-          }
+        "code": "raisable",
+        "hoursToGrow": 336,
+        "adultEntityCodes": [
+          "harepet:tamehare-male-ashgrey",
+          "harepet:tamehare-female-ashgrey",
+          "harepet:tamehare-male-darkbrown",
+          "harepet:tamehare-female-darkbrown",
+          "harepet:tamehare-male-gold",
+          "harepet:tamehare-female-gold",
+          "harepet:tamehare-male-lightbrown",
+          "harepet:tamehare-female-lightbrown",
+          "harepet:tamehare-male-lightgrey",
+          "harepet:tamehare-female-lightgrey",
+          "harepet:tamehare-male-silver",
+          "harepet:tamehare-female-silver",
+          "harepet:tamehare-male-smokegrey",
+          "harepet:tamehare-female-smokegrey"
         ]
       },
       {
@@ -303,19 +272,39 @@
               "hyena-female",
               "bear-*"
             ],
-            "priority": 2,
-            "movespeed": 0.06,
-            "seekingRange": 14,
+            "priority": 1.5,
+            "movespeed": 0.04,
+            "animationSpeed": 1.8,
+            "seekingRange": 8,
             "instafleeOnDamageChance": 1,
-            "animation": "Run",
-            "animationSpeed": 2
+            "animation": "Run"
           },
           {
             "code": "getoutofwater",
-            "priority": 1.4,
+            "priority": 1.45,
             "movespeed": 0.015,
             "animation": "Walk",
             "animationSpeed": 2.2
+          },
+          {
+            "code": "stayclosetoentity",
+            "priority": 1.4,
+            "entityCode": "harepet:tamehare-female",
+            "movespeed": 0.02,
+            "animationSpeed": 3,
+            "maxDistance": 5,
+            "searchRange": 25,
+            "animation": "Run"
+          },
+          {
+            "code": "stayclosetoentity",
+            "priority": 1.4,
+            "entityCode": "game:hare-female",
+            "movespeed": 0.02,
+            "animationSpeed": 3,
+            "maxDistance": 5,
+            "searchRange": 25,
+            "animation": "Run"
           },
           {
             "code": "idle",
@@ -342,27 +331,15 @@
             "stopOnHurt": true
           },
           {
-            "code": "seekfoodandeat",
-            "movespeed": 0.01,
-            "priority": 1.25,
-            "eatTime": 2.3,
-            "eatLooseItems": true,
-            "animationSpeed": 1.4,
-            "animation": "Walk",
-            "eatAnimation": "longdig",
-            "mincooldownHours": 6,
-            "maxcooldownHours": 12
-          },
-          {
             "code": "idle",
-            "priority": 1.2,
+            "priority": 1.3,
             "priorityForCancel": 1.35,
             "minduration": 2500,
             "maxduration": 2500,
-            "mincooldown": 6000,
-            "maxcooldown": 20000,
+            "mincooldown": 10000,
+            "maxcooldown": 50000,
             "animation": "Sniff",
-            "animationSpeed": 1.25
+            "animationSpeed": 0.8
           },
           {
             "code": "idle",
@@ -373,17 +350,6 @@
             "mincooldown": 6000,
             "maxcooldown": 20000,
             "animation": "Dig",
-            "animationSpeed": 1
-          },
-          {
-            "code": "idle",
-            "priority": 1.1,
-            "priorityForCancel": 1.35,
-            "minduration": 2500,
-            "maxduration": 2500,
-            "mincooldown": 12000,
-            "maxcooldown": 40000,
-            "animation": "longDig",
             "animationSpeed": 1
           },
           {
@@ -400,8 +366,9 @@
             "priority": 1,
             "priorityForCancel": 1.35,
             "movespeed": 0.01,
+            "animationSpeed": 1.7,
             "animation": "Walk",
-            "preferredLightLevel": 20
+            "preferredLightLevel": 24
           },
           {
             "code": "idle",
@@ -410,7 +377,7 @@
             "maxduration": 30000,
             "mincooldown": 2000,
             "maxcooldown": 120000,
-            "priorityForCancel": 1.28,
+            "priorityForCancel": 1.35,
             "animation": "Sit"
           },
           { "code": "lookaround", "priority": 0.5 },
@@ -489,7 +456,6 @@
           }
         ]
       },
-      { "code": "ropetiable", "minGeneration": 0 },
       { "code": "pettableextended", "minGeneration": 0 }
     ]
   },
@@ -497,6 +463,5 @@
     "hurt": "game:creature/hare-hurt",
     "death": "game:creature/hare-hurt",
     "idle": "game:creature/hare-idle"
-  },
-  "idleSoundChance": 0.03
+  }
 }

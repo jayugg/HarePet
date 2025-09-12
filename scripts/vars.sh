@@ -1,0 +1,4 @@
+VINTAGE_STORY="$VINTAGE_STORY_1_21"
+WORLD_NAME="[TEST] HarePet"
+TEST_DIR="$(pwd)/test"
+TEST_DATA_PATH="$TEST_DIR/VintagestoryData"
