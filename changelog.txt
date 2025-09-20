@@ -1,5 +1,4 @@
-v1.3.0 – 1.21 Update
-- [Update] Hares follow new vanilla conventions. Updating from the 1.20 version will remove your old pets.
-- [Fix] Fixed interaction between tamed hares and foxes
-- [Tweak] Mating tamed hares will give birth to normal hares unless parents are both tamed. (Tame hares can mate with normal hares).
-- [Localisation] Updated to use new game localisations (other languages missing the "tame" descriptor)
+v1.3.1
+- [Fix] Fixed fox patches that threw errors in the logs
+- [Fix] Removed hare spawn conditions (leftover from vanilla asset, pet hares don't need to spawn)
+- [Tweak] Part baked veggie pet cookie can now also be used on pet hares

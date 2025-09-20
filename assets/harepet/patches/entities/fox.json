@@ -1,19 +1,19 @@
 [
   {
     "op": "addEach",
-    "path": "/server/behaviors/12/aitasks/4/entityCodes/-",
+    "path": "/server/behaviors/11/aitasks/4/entityCodes/-",
     "value": [ "harepet:hare-*" ],
     "file": "game:entities/animal/mammal/fox-adult.json"
   },
   {
     "op": "addEach",
-    "path": "/server/behaviors/12/aitasks/5/entityCodes/-",
+    "path": "/server/behaviors/11/aitasks/5/entityCodes/-",
     "value": [ "harepet:hare-*" ],
     "file": "game:entities/animal/mammal/fox-adult.json"
   },
   {
     "op": "addEach",
-    "path": "/server/behaviors/12/aitasks/1/entityCodes/-",
+    "path": "/server/behaviors/11/aitasks/1/entityCodes/-",
     "value": [ "harepet:hare-*" ],
     "file": "game:entities/animal/mammal/fox-baby.json"
   }

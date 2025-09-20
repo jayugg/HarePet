@@ -91,6 +91,12 @@
             "domain": "petai",
             "progress": 0.8,
             "cooldown": 3
+          },
+          {
+            "code": "petcookie-veggie-partbaked",
+            "domain": "petai",
+            "progress": 0.4,
+            "cooldown": 3
           }
         ]
       },
@@ -115,7 +121,8 @@
           { "type": "item", "code": "vegetable-cookedpapyrusroot" },
           { "type": "item", "code": "vegetable-bellpepper" },
           { "type": "item", "code": "vegetable-olive" },
-          { "type": "item", "code": "petai:petcookie-veggie-perfect" }
+          { "type": "item", "code": "petai:petcookie-veggie-perfect" },
+          { "type": "item", "code": "petai:petcookie-veggie-partbaked" }
         ]
       }
     ],
@@ -312,7 +319,8 @@
               "vegetable-cookedpapyrusroot",
               "vegetable-bellpepper",
               "vegetable-olive",
-              "petai:petcookie-veggie-perfect"
+              "petai:petcookie-veggie-perfect",
+              "petai:petcookie-veggie-partbaked"
             ],
             "useTime": 1.5,
             "mincooldownHours": 1,
@@ -416,6 +424,12 @@
             "domain": "petai",
             "progress": 0.8,
             "cooldown": 3
+          },
+          {
+            "code": "petcookie-veggie-partbaked",
+            "domain": "petai",
+            "progress": 0.4,
+            "cooldown": 3
           }
         ]
       },
@@ -440,7 +454,8 @@
           { "type": "item", "code": "vegetable-cookedpapyrusroot" },
           { "type": "item", "code": "vegetable-bellpepper" },
           { "type": "item", "code": "vegetable-olive" },
-          { "type": "item", "code": "petai:petcookie-veggie-perfect" }
+          { "type": "item", "code": "petai:petcookie-veggie-perfect" },
+          { "type": "item", "code": "petai:petcookie-veggie-partbaked" }
         ]
       },
       { "code": "pettableextended", "minGeneration": 0 }

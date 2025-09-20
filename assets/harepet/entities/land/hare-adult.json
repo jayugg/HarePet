@@ -94,6 +94,12 @@
             "domain": "petai",
             "progress": 0.8,
             "cooldown": 3
+          },
+          {
+            "code": "petcookie-veggie-partbaked",
+            "domain": "petai",
+            "progress": 0.4,
+            "cooldown": 3
           }
         ]
       },
@@ -118,7 +124,8 @@
           { "type": "item", "code": "vegetable-cookedpapyrusroot" },
           { "type": "item", "code": "vegetable-bellpepper" },
           { "type": "item", "code": "vegetable-olive" },
-          { "type": "item", "code": "petai:petcookie-veggie-perfect" }
+          { "type": "item", "code": "petai:petcookie-veggie-perfect" },
+          { "type": "item", "code": "petai:petcookie-veggie-partbaked" }
         ]
       }
     ],
@@ -414,7 +421,8 @@
               "vegetable-cookedpapyrusroot",
               "vegetable-bellpepper",
               "vegetable-olive",
-              "petai:petcookie-veggie-perfect"
+              "petai:petcookie-veggie-perfect",
+              "petai:petcookie-veggie-partbaked"
             ],
             "useTime": 1.5,
             "mincooldownHours": 1,
@@ -518,6 +526,12 @@
             "domain": "petai",
             "progress": 0.8,
             "cooldown": 3
+          },
+          {
+            "code": "petcookie-veggie-partbaked",
+            "domain": "petai",
+            "progress": 0.4,
+            "cooldown": 3
           }
         ]
       },
@@ -542,131 +556,11 @@
           { "type": "item", "code": "vegetable-cookedpapyrusroot" },
           { "type": "item", "code": "vegetable-bellpepper" },
           { "type": "item", "code": "vegetable-olive" },
-          { "type": "item", "code": "petai:petcookie-veggie-perfect" }
+          { "type": "item", "code": "petai:petcookie-veggie-perfect" },
+          { "type": "item", "code": "petai:petcookie-veggie-partbaked" }
         ]
       }
-    ],
-    "spawnconditionsByType": {
-      "*-arctic-adult-male": {
-        "worldgen": {
-          "TriesPerChunk": { "avg": 0.075, "var": 0 },
-          "tryOnlySurface": true,
-          "__comment": "Make them spawn avoid from block light so they don't spawn inside farmland",
-          "maxLightLevel": 8,
-          "lightLevelType": "onlyBlockLight",
-          "groupSize": { "dist": "verynarrowgaussian", "avg": 1, "var": 3 },
-          "insideBlockCodes": [ "tallgrass-*", "snowlayer-1" ],
-          "companions": [
-            "hare-{type}-adult-female",
-            "hare-{type}-baby-male",
-            "hare-{type}-baby-female"
-          ]
-        },
-        "runtime": {
-          "group": "neutral",
-          "chance": 0.001,
-          "tryOnlySurface": true,
-          "maxQuantity": 3,
-          "__comment": "Make them spawn avoid from block light so they don't spawn inside farmland",
-          "maxLightLevel": 8,
-          "lightLevelType": "onlyBlockLight",
-          "groupSize": { "dist": "verynarrowgaussian", "avg": 1, "var": 3 },
-          "insideBlockCodes": [ "tallgrass-*", "snowlayer-1" ],
-          "companions": [
-            "hare-{type}-adult-female",
-            "hare-{type}-baby-male",
-            "hare-{type}-baby-female"
-          ]
-        },
-        "climate": {
-          "minTemp": -70,
-          "maxTemp": -8,
-          "minRain": 0.25,
-          "minForestOrShrubs": 0.25,
-          "maxForest": 0.75,
-          "maxShrubs": 0.75
-        }
-      },
-      "*-cape-adult-male": {
-        "worldgen": {
-          "TriesPerChunk": { "avg": 0.075, "var": 0 },
-          "tryOnlySurface": true,
-          "__comment": "Make them spawn in dark places so they don't spawn inside farmland",
-          "maxLightLevel": 8,
-          "lightLevelType": "maxTimeOfDayLight",
-          "groupSize": { "dist": "verynarrowgaussian", "avg": 1, "var": 3 },
-          "insideBlockCodes": [ "tallgrass-*", "snowlayer-1" ],
-          "companions": [
-            "hare-{type}-adult-female",
-            "hare-{type}-baby-male",
-            "hare-{type}-baby-female"
-          ]
-        },
-        "runtime": {
-          "group": "neutral",
-          "chance": 0.001,
-          "tryOnlySurface": true,
-          "__comment": "Make them spawn in dark places so they don't spawn inside farmland",
-          "maxLightLevel": 8,
-          "maxQuantity": 3,
-          "lightLevelType": "maxTimeOfDayLight",
-          "groupSize": { "dist": "verynarrowgaussian", "avg": 1, "var": 3 },
-          "insideBlockCodes": [ "tallgrass-*", "snowlayer-1" ],
-          "companions": [
-            "hare-{type}-adult-female",
-            "hare-{type}-baby-male",
-            "hare-{type}-baby-female"
-          ]
-        },
-        "climate": {
-          "minTemp": 22,
-          "maxTemp": 40,
-          "minRain": 0.2,
-          "maxRain": 0.45,
-          "minForestOrShrubs": 0.25,
-          "maxForest": 0.75,
-          "maxShrubs": 0.75
-        }
-      },
-      "*-european-adult-male": {
-        "worldgen": {
-          "TriesPerChunk": { "avg": 0.14, "var": 0 },
-          "tryOnlySurface": true,
-          "groupSize": { "dist": "uniform", "avg": 1, "var": 3 },
-          "insideBlockCodes": [ "tallgrass-*", "snowlayer-1" ],
-          "companions": [
-            "hare-{type}-adult-female",
-            "hare-{type}-baby-male",
-            "hare-{type}-baby-female"
-          ]
-        },
-        "runtime": {
-          "group": "neutral",
-          "tryOnlySurface": true,
-          "chance": 0.007,
-          "maxQuantity": 3,
-          "__comment": "Make them spawn away from artifical light so they don't spawn inside farmland",
-          "maxLightLevel": 6,
-          "lightLevelType": "onlyBlockLight",
-          "groupSize": { "dist": "uniform", "avg": 1, "var": 3 },
-          "insideBlockCodes": [ "tallgrass-*", "snowlayer-1" ],
-          "companions": [
-            "hare-{type}-adult-female",
-            "hare-{type}-baby-male",
-            "hare-{type}-baby-female"
-          ]
-        },
-        "climate": {
-          "minTemp": -5,
-          "maxTemp": 25,
-          "minRain": 0.3,
-          "maxRain": 0.9,
-          "minForestOrShrubs": 0.25,
-          "maxForest": 0.75,
-          "maxShrubs": 0.75
-        }
-      }
-    }
+    ]
   },
   "sounds": {
     "hurt": "game:creature/hare-hurt",
